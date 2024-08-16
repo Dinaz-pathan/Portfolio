@@ -210,6 +210,7 @@ nav ul li a:hover::after{
     display: block;
     transition: transfrom 0.5s;
 }
+
 .layer{
     width:80%;
     height: 0;
@@ -234,15 +235,15 @@ nav ul li a:hover::after{
 
 }
 .layer a{
-    margin-top: 15px;
+    margin-top: 45px;
     color: #ff004f;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
     background:#fff;
     text-align: center;
-    width: 57px;
-    height: 34px;
+    width: 50px;
+    height: 24px;
     padding-top: 23px;
     border-radius: 50%;
 }
