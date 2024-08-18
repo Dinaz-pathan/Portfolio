@@ -325,7 +325,7 @@ nav ul li a:hover::after{
     cursor: pointer;
 }
 /* ----------------css responsive ----------*/
-  nav .fas{
+  nav .fa-solid{
     display: none;
 }
 
@@ -338,7 +338,7 @@ nav ul li a:hover::after{
     .header-text h1{
         font-size: 30px;
     }
-    nav .fas{
+    nav .fa-solid{
         display: block;
         font-size: 25px;
     }
@@ -350,14 +350,14 @@ nav ul li a:hover::after{
         width: 200px;
         height: 100vh;
         padding-top: 50px;
-         z-index: 2;
+        z-index: 2;
         transition: right 0.5s;
     }
     nav ul li{
         display: block;
         margin: 25px;
     }
-    nav ul .fas{
+    nav ul .fa-solid{
     position: absolute;
     top: 25px;
     left: 25px;
@@ -366,7 +366,7 @@ nav ul li a:hover::after{
     .sub-title{
         font-size: 40px;      
     }
-    .about-col-1, .about-col-2{
+    .about-col-1,.about-col-2{
         flex-basis: 100%;
     }
     .about-col-1{
@@ -384,3 +384,9 @@ nav ul li a:hover::after{
     }
     
 } 
+#msg{
+    color: #61b752;
+    display: block;
+    margin-top:-40px ;
+
+}
