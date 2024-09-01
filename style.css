@@ -325,11 +325,11 @@ nav ul li a:hover::after{
     cursor: pointer;
 }
 /* ----------------css responsive ----------*/
-  nav .fa-solid{
+  nav .fas{
     display: none;
 }
 
-@media only screen and(max-width:600px) {
+@media only screen and(max-width: 600px) {
 
     .header-text{
         margin-top: 100%;
@@ -338,7 +338,7 @@ nav ul li a:hover::after{
     .header-text h1{
         font-size: 30px;
     }
-    nav .fa-solid{
+    nav .fas{
         display: block;
         font-size: 25px;
     }
@@ -389,4 +389,4 @@ nav ul li a:hover::after{
     display: block;
     margin-top:-40px ;
 
-}
+} */
