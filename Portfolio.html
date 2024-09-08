@@ -10,14 +10,14 @@
     <div id="header">
         <div class="container">
             <nav>
-                <h1 class="logo" style="font-size: 60px;"> Dinaz. </h1>
+                <h1 class="logo" style="font-size: 60px;"> Dinaz </h1>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
+                    <i class="fas fa-times-square" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
@@ -36,16 +36,14 @@
                 <div class="about-col-1">
                     <img src="images.png/images/photo.png">
                 </div>
-                
+
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p style="font-size: 20px;"> Creative Full Stack Developer with a knack for turning ideas into sleek,
-                         functional web apps. Armed with skills in HTML, CSS, JavaScript, and frameworks like React,
-                          I love blending design with code to craft seamless user experiences. 
-                          Ready to dive into the tech world, eager to learn, adapt, and make my mark by building innovative, responsive websites from the ground up."
-                    </p>
-
-
+                        functional web apps. Armed with skills in HTML, CSS, JavaScript, and frameworks like React,
+                         I love blending design with code to craft seamless user experiences. 
+                         Ready to dive into the tech world, eager to learn, adapt, and make my mark by building innovative, responsive websites from the ground up."
+                   </p>
                            <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                             <p class="tab-links"  onclick="opentab('education')">Education</p>
@@ -55,7 +53,6 @@
 
                            <div class="tab-contents active-tab" id="skills">
                             <ul>
-                                <li><span>Designer</span><br>Designing Web interfaces</li>
                                 <li><span>Web Development</span><br>Web Designing</li>
                                 <li><span>Full Stack Developer</span><br> Building Websites </li>
                             </ul>
@@ -63,10 +60,9 @@
 
                            <div  class="tab-contents" id="education">
                             <ul>
-                                <li><span>2024</span><br> Full Stack Developer</li>
+                                <li><span>2023</span><br> Full Stack Developer</li>
                                 <li><span>2023</span><br> Bachelor Of Science in Computer Science <br>CGPA:7.57<br> JSS Banashakeri S.K Gubbi College Dharwad.</li>
                                 <li><span>2020</span><br> Pre University <br> JSS RS Hukkeriker PU College Dharwad. </li>
-                                
                           </ul>
                            </div>
 
@@ -86,23 +82,20 @@
         <div class="container">
             <h1 class="sub-title">My Skills</h1>
             <div class="services-list">
-            
                 <div>
                     <i class="fa-brands fa-webflow"></i>
                     <h2>Web Developer</h2>
                     <p>Web development refers to building,creating websites.It includes aspects such as web design,
                         web publishing,web programming,and databases management.
                         </p>
-                        
                     </div> 
-                    
+
                     <div>
                     <i class="fa-solid fa-crop-simple"></i>
                     <h2>Full Stack Developer</h2>
                     <p>A Full-Stack Developer and versatile programmer skilled in both front-end and back-end development.Can build complete web applications, 
                         handling everything from designing user interfaces to managing databases and server logic. 
                        </p>
-                    
                 </div>
 
             </div>
@@ -147,7 +140,7 @@
    </div>
 
    <!-- ----------contact-------- -->
-   
+
      <div id="contact">
         <div class="conatiner">
             <div class="row">
@@ -177,11 +170,11 @@
         var tablinks = document.getElementsByClassName("tab-links")
         var tabcontents = document.getElementsByClassName("tab-contents")
 
-          function opentab(event,tabname){
-            for(let tablink of tablinks){
+          function opentab(tabname){
+            for(tablink of tablinks){
                 tablink.classList.remove("active-link");
             }
-            for(let tabcontent of tabcontents){
+            for(tabcontent of tabcontents){
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
@@ -189,7 +182,6 @@
           }
     </script>
     <script>
-        document.addEventListener("DOMContentLoaded",function(){
         var sidemenu = document.getElementById("sidemenu");
 
         function openmenu()
@@ -200,24 +192,25 @@
         {
             sidemenu.style.right = "-200px";
         }
-    });
     </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbw4R8sfnX07gdOxqln1fJVvUW1y5LHzPk3YRDHQzumgp87gkGFxC2iTgxsS9_BTjh2V/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg= document.getElementById("msg")
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML="Message sent successfully"
-                setTimeout(function(){
-                msg.innerHTML=""
-             },5000)
-             form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxkTxz1Dwfu6ZmPQwhhix9jfk1hhU12uE7FheA2JKfBhlghbFZd8-BECL8aVMX_ecC7/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Email sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
         })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
       </script>
 </body>
 </html>

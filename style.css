@@ -210,7 +210,6 @@ nav ul li a:hover::after{
     display: block;
     transition: transfrom 0.5s;
 }
-
 .layer{
     width:80%;
     height: 0;
@@ -235,15 +234,15 @@ nav ul li a:hover::after{
 
 }
 .layer a{
-    margin-top: 45px;
+    margin-top: 15px;
     color: #ff004f;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
     background:#fff;
     text-align: center;
-    width: 50px;
-    height: 24px;
+    width: 57px;
+    height: 34px;
     padding-top: 23px;
     border-radius: 50%;
 }
@@ -329,7 +328,7 @@ nav ul li a:hover::after{
     display: none;
 }
 
-@media only screen and(max-width: 600px) {
+@media only screen and (max-width:600px) {
 
     .header-text{
         margin-top: 100%;
@@ -350,14 +349,14 @@ nav ul li a:hover::after{
         width: 200px;
         height: 100vh;
         padding-top: 50px;
-        z-index: 2;
+         z-index: 2;
         transition: right 0.5s;
     }
     nav ul li{
         display: block;
         margin: 25px;
     }
-    nav ul .fa-solid{
+    nav ul .fas{
     position: absolute;
     top: 25px;
     left: 25px;
@@ -366,7 +365,7 @@ nav ul li a:hover::after{
     .sub-title{
         font-size: 40px;      
     }
-    .about-col-1,.about-col-2{
+    .about-col-1, .about-col-2{
         flex-basis: 100%;
     }
     .about-col-1{
@@ -382,7 +381,7 @@ nav ul li a:hover::after{
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
-    
+
 } 
 #msg{
     color: #61b752;
